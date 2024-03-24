@@ -51,7 +51,7 @@ const ProjectsSection = () => {
   };
 
 return (
-      <section id="projects">
+      <section id="web3einbinden">
       <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white pt-8 mt-10 mb-6 md:mb-5 xl:pt-24'>
         Web3 Onboarding
         </h1>

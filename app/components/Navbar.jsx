@@ -14,11 +14,11 @@ const navLinks = [
   },
   {
     title: "Web3 einbinden",
-    path: "#projects",
+    path: "#web3einbinden",
   },
   {
     title: "Kontakt",
-    path: "#contact",
+    path: "#kontakt",
   }
 ]
 
