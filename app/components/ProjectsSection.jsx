@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Simple Wallet Connect",
     description: "Simple Wallet Connect von thirdweb bringt jede Website ins Web3",
-    image: '/images/projects/thirdweb-login.png',
+    image: '/images/projects/simple-wallet-connect.png',
     tag: ["Alle", "Wallet"],
     previewUrl: "https://simple-wallet-connect-v2.vercel.app/",
   },
