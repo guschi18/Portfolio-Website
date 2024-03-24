@@ -2,12 +2,13 @@ import React from 'react';
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const  ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const  ProjectCard = ({ imgUrl, title, description, previewUrl }) => {
   return (
     <div>
       <div className='rounded-t-xl relative group'>
       <img className='rounded-md relative group' 
       src={imgUrl} 
+      loading="eager"
       />
       <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] 
       bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
