@@ -30,7 +30,7 @@ const projectsData = [
     id: 4,
    title: "Ausbau",
     description: "Wir bauen dir deinen Camper nach deinen Wünschen aus",
-    image: '/images/projects/ausbau.jpeg',
+    image: '/images/projects/ausbau.png',
     tag: ["Alle", "Van"],
   },
 ];
