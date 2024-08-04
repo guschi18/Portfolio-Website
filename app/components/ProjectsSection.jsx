@@ -23,7 +23,7 @@ const projectsData = [
     id: 3,
    title: "Dämmung",
     description: "Wir dämmen deinen Van nach höchstem Standart",
-    image: '/images/projects/dämmung.jpeg',
+    image: '/images/projects/daemmung.png',
     tag: ["Alle", "Van"],
   },
   {
