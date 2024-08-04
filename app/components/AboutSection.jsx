@@ -1,100 +1,29 @@
 "use client"
-import React, { useTransition, useState} from 'react'
 import Image from 'next/image'
-import TabButton from './TabButton';
-
-const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className='list-disc pl-2'>
-        <li>HTML</li>
-        <li>Tailwind CSS</li>
-        <li>JavaScript</li>
-        <li>Next.js</li>
-        <li>Hardhat</li>
-        <li>Solidity</li>
-      </ul>
-    )
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className='list-disc pl-2'>
-        <li>freeCodeCamp</li>
-        <li>CodeCombat</li>
-        <li>Alchemy Web3</li>
-        <li>Moralis Web3</li>
-        <li>LearnWeb3</li>
-        <li>thirdweb</li>
-      </ul>
-    )
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className='list-disc pl-2'>
-        <li>Freshman - Certification</li>
-        <li>Sophomore - Certification</li>
-      </ul>
-    )
-  }
-
-
-]
-
 
 function AboutSection() {
   
-    const [tab, setTab] = useState("skills");
-    const [isPending, startTransition] = useTransition();
-  
-    const handleTabChange = (id) => {
-      startTransition(() => {
-        setTab(id);
-      });
-    };
-
-  return (
-    <section className="text-white" id="about">
-    <div className="gap-8 items-center pt-6 px-4 
-    sm:py-16 
-    md:grid md:grid-cols-2 
-    xl:gap-16 xl:px-16 
+   return (
+    <section className="flex justify-center text-white" id="about">
+    <div className="gap-8 flex items-center justify-center px-4
     lg:w-[850px] lg:h-[450px]
-    xl:w-[1075px] xl:h-[450px]
-    xl:ml-24 xl:pt-24">
-    <Image
-             src="https://firebasestorage.googleapis.com/v0/b/login-page-b381a.appspot.com/o/code.jpg?alt=media&token=701caf1f-f77c-441c-89a1-20ce274339b1"
-            width={450}
-            height={450}
-            alt="Logo"
-            className='rounded'
-            />
-       <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-        <h2 className=" md:text-4xl lg:text-5xl text-2xl font-bold text-white mb-4">About</h2>
-        <p className="text-lg lg:text-lg">Das wird eine Beschreibung über mich</p>
-        <div className='flex text-lg flex-row justifiy-start mt-4'>
-          <TabButton selectTab={() => handleTabChange("skills")} 
-          active={tab === "skills"}>
-          {" "}
-          Skills{" "}
-          </TabButton>
-          <TabButton selectTab={() => handleTabChange("education")} 
-          active={tab ==="education"}>
-          {" "}
-           Education{" "}
-          </TabButton>
-          <TabButton selectTab={() => handleTabChange("certifications")} 
-          active={tab==="certifications"}>
-          {" "}
-           Experience{" "}
-          </TabButton>
-        </div>
-        <div className='mt-6'>{TAB_DATA.find((t) => t.id === tab).content}</div>
+    xl:w-[1550px] xl:h-[550px]
+    xl:px-16 ">
+        <div className=" md:mt-4 text-left flex flex-col justify-center h-full xl:mb-12 xl:mt-6 mt-8">
+        <h2 className=" md:text-4xl lg:text-5xl text-4xl font-bold text-white mb-4 flex justify-center pb-6">Herzlich Willkommen</h2>
+        <p className='text-white text-xl mb-2'> bei JP Caravans,
+
+        Wir sind dein Partner im Bereich des Autarken Campens und weiterem Zubehör für deinen Caravan. 
+        <br/>
+        <br/>
+        Egal ob Wohnwagen, Wohnmobil oder Van mit uns erschafft du deinen ganz Persönlichen Campertraum.
+
+        Ob du einen Mover nachgerüstet haben möchtest oder dein Camper komplett Autark werden soll. Bei uns erhälst du alles was du für deinen Caravan brauchst!
+        <br/>
+        <br/>
+        Wir, das sind Julian und Philipp zwei seid Jahren begeisterte Camper die sich Ihre eigenen Camper schon Individuelle gestaltet haben. 
+        <br/>
+        Da wir beide KFZ-Meister sind und auf Jahrelange Berufserfahrung zurückblicken können ist dein Camper bei uns in besten Händen!</p>
         </div>   
         </div>  
     </section>

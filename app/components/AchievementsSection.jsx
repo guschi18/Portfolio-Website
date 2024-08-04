@@ -6,19 +6,20 @@ const AnimatedNumbers = dynamic(() => {return import ("react-animated-numbers")}
 
 const achievementsList = [
   {
-    metric: "Projekte",
-    value: "35",
-    postfix: "+"
+    metric: "Jahre Erfahrung im Automobilbereich",
+    value: "15",
+   
   },
   {
-    metric: "Zertifikate",
-    value: "20",
-    postfix: "+"
+    metric: "Meisterbriefe",
+    value: "2",
+    
     
   },
   {
-    metric: "Jahre Erfahrung im WEB3",
-    value: "6",
+    metric: "Jahre Ehrfahrung im Campen",
+    value: "30",
+    
     
   },
  
@@ -26,7 +27,7 @@ const achievementsList = [
 
 const AchievementsSection = () => {
   return (
-    <div className='py-6 px-6 xl:gap-16 sm:py-16 xl:pr-14 xl:pt-8'>
+    <div className='py-6 px-6 xl:gap-16 sm:py-16 xl:pr-14 xl:pt-8 xl:pb-12'>
       <div className='border-[#33353F] border rounded-md py-8 px-17 flex flex-col sm:flex-row items-center justify-between'>
       {
       achievementsList.map((achievement, index) => {
@@ -49,7 +50,7 @@ const AchievementsSection = () => {
               />
                {achievement.postfix}
               </h2>
-            <p className="text-[#ABD7BE] text-base">{achievement.metric}</p>
+            <p className="text-[#ABD7BE] text-base text-center">{achievement.metric}</p>
           </div>
         );
       })}

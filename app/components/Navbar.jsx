@@ -9,12 +9,12 @@ import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
   {
-      title: "About",
+      title: "Über uns",
       path: "#about",
   },
   {
-    title: "Web3 einbinden",
-    path: "#web3einbinden",
+    title: "Projekte",
+    path: "#web3onboarding",
   },
   {
     title: "Kontakt",
@@ -26,15 +26,10 @@ function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0  z-10 bg-[#121212] bg-opacity-100'>
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto pl-2 pr-2 pt-2 md:pl-8 md:pr-8 md:pt-8">
-        <Link href="/" className="text-5xl text-white font-semibold">
-        <Image
-          src="https://firebasestorage.googleapis.com/v0/b/login-page-b381a.appspot.com/o/1-removebg-preview.png?alt=media&token=b921186a-0760-47a5-842d-deef8df34199"
-          width={100}
-          height={100}
-          alt="Logo"
-        />
+    <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto pl-2 pr-4 pt-2 md:pl-8 md:pr-8 md:pt-8">
+        <Link href="/" className="text-3xl text-white font-semibold">
+        <div>JP Caravans</div>
         </Link>
         <div className='mobile-menu block md:hidden'>
         {!navbarOpen ? (

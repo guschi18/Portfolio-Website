@@ -4,19 +4,15 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='footer border border-t-[#33353F] border-left-transparent border-r-transparent text-white'>
-      <div className='container pb-12 pt-6 xl:p-12 flex justify-between'>
-        <div className='xl:ml-36 md:ml-7 ml-2'>
-          <Link href="/">
-          <Image
-          src="https://firebasestorage.googleapis.com/v0/b/login-page-b381a.appspot.com/o/1-removebg-preview.png?alt=media&token=b921186a-0760-47a5-842d-deef8df34199"
-          width={100}
-          height={100}
-          alt="Logo"
-        />
+    <footer className='footer border border-t-[#33353F] border-left-transparent border-r-transparent text-white bg-[#121212] '>
+      <div className='container pb-12 pt-2 xl:p-6 flex justify-between xl:ml-48 xl:pr-24  md:pr-6 ml-4'>
+        <Link href="/datenschutz">
+        <p className='text-slate-600 mt-4 mb-4 mr-2 ' >Datenschutz</p>
         </Link>
-        </div>
-        <p className='text-slate-600 mt-4 mr-2 '>All rights reserved.</p>
+        <Link href="/impressum">
+        <p className='text-slate-600 mt-4 mb-4 mr-2 ' >Impressum</p>
+        </Link>
+        <p className='text-slate-600 mt-4 mb-4 mr-6 '>All rights reserved.</p>
       </div>
     </footer>
   )

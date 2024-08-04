@@ -7,28 +7,31 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Simple Wallet Connect",
-    description: "Simple Wallet Connect von thirdweb bringt jede Website ins Web3",
-    image: '/images/projects/simple.png',
-    tag: ["Alle", "Wallet"],
-    previewUrl: "https://simple-wallet-connect-v2.vercel.app/",
+    title: "Solaranlage",
+    description: "Nachrüstung einer Solaranlage auf deinem Dach",
+    image: '/images/projects/solar.jpg',
+    tag: ["Alle", "Camper"],
   },
-  
   {
     id: 2,
-    title: "Campact Wallet Connect",
-    description: "Compact Wallet Connect von thirdweb bringt jede Website ins Web3 inklsuvie SOCIAL LOGIN",
-    image: '',
-    tag: ["Alle", "Wallet"],
-    previewUrl: "",
+    title: "Mover",
+    description: "Nachrüstung Mover für deinen Camper",
+    image: '/images/projects/mover.jpg',
+    tag: ["Alle", "Camper"],
   },
   {
     id: 3,
-   title: "Embedded Wallet",
-    description: "Eingebettete Wallets sind Wallets, die für Benutzer eingerichtet werden, wenn sie die App zum ersten Mal aufrufen",
-    image: '',
-    tag: ["Alle", "Wallet"],
-    previewUrl: "https://third-web-web3-login.vercel.app/",
+   title: "Dämmung",
+    description: "Wir dämmen deinen Van nach höchstem Standart",
+    image: '/images/projects/dämmung.jpeg',
+    tag: ["Alle", "Van"],
+  },
+  {
+    id: 4,
+   title: "Ausbau",
+    description: "Wir bauen dir deinen Camper nach deinen Wünschen aus",
+    image: '/images/projects/ausbau.jpeg',
+    tag: ["Alle", "Van"],
   },
 ];
 
@@ -51,9 +54,9 @@ const ProjectsSection = () => {
   };
 
 return (
-      <section id="web3einbinden">
-      <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white pt-8 mt-10 mb-6 md:mb-5 xl:pt-24'>
-        Web3 Onboarding
+      <section id="web3onboarding">
+      <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white pt-8 mt-10 md:mb-5 xl:pt-28'>
+        Projekte
         </h1>
         <div className='text-white flex flex-row justify-center items-center gap-2 pt-4 pb-6'>
           <ProjectTag onClick={handleTagChange} 
@@ -61,15 +64,15 @@ return (
           isSelected={tag === "Alle"} 
           />
            <ProjectTag onClick={handleTagChange} 
-          name="Wallet" 
-          isSelected={tag === "Wallet"} 
+          name="Camper" 
+          isSelected={tag === "Camper"} 
           />
           <ProjectTag onClick={handleTagChange} 
-          name="Web" 
-          isSelected={tag === "Web"} 
+          name="Van" 
+          isSelected={tag === "Van"} 
           />
         </div>
-        <ul ref={ref} className="md:w-[680px] lg:w-[940px] xl:w-[1250px] py-12 grid md:grid-cols-3 gap-8 md:gap-12">
+        <ul ref={ref} className="md:w-[680px] lg:w-[940px] xl:w-[1250px] pt-4 grid md:grid-cols-3 gap-8 md:gap-12">
           {filteredProjects.map((project, index) => (
           <motion.li 
           key={index}
@@ -83,8 +86,7 @@ return (
             description={project.description} 
             imgUrl={project.image}
             gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
-          />
+            />
           </motion.li>
           ))}
         </ul>
