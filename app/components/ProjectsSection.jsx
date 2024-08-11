@@ -55,7 +55,7 @@ const ProjectsSection = () => {
 
 return (
       <section id="web3onboarding">
-      <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white pt-8 mt-10 md:mb-5 xl:pt-28'>
+      <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white mt-12 md:mb-5 xl:pt-28'>
         Projekte
         </h1>
         <div className='text-white flex flex-row justify-center items-center gap-2 pt-4 pb-6'>

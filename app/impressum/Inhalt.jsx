@@ -13,7 +13,7 @@ function Inhalt() {
 
       <div className="text-xl">Kontakt:</div><br />
       <p>Telefon: 01232156489<br />
-      E-Mail: jpcaravans@gmx.de</p><br />
+      E-Mail: jpcaravans@web.de</p><br />
 
       <div className="text-xl">Redaktionell verantwortlich:</div><br />
       <p>Philipp Guschl</p><br />

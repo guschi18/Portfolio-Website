@@ -9,9 +9,9 @@ function AboutSection() {
     lg:w-[850px] lg:h-[450px]
     xl:w-[1550px] xl:h-[550px]
     xl:px-16 ">
-        <div className=" md:mt-4 text-left flex flex-col justify-center h-full xl:mb-12 xl:mt-6 mt-8">
-        <h2 className=" md:text-4xl lg:text-5xl text-4xl font-bold text-white mb-4 flex justify-center pb-6">Herzlich Willkommen</h2>
-        <p className='text-white text-xl mb-2'> bei JP Caravans,
+        <div className=" md:mt-4 text-left flex flex-col justify-center h-full xl:mt-20 xl:pt-12 mt-10">
+        <h2 className=" md:text-4xl lg:text-5xl text-4xl font-bold text-white mb- flex justify-center pl-4 pb-6">Herzlich Willkommen</h2>
+        <p className='text-white text-xl lg:text-2xl xl:mt-12'> bei JP Caravans,
 
         Wir sind dein Partner im Bereich des Autarken Campens und weiterem Zubehör für deinen Caravan. 
         <br/>

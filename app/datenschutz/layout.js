@@ -4,8 +4,8 @@ import '../globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Datenschutz | WEB3 EngineerDE',
-  description: 'Der WEB3 Entwickler',
+  title: 'JP Caravans',
+  description: 'Dein Profi für Campingnachrüstungen',
 }
 
 export default function RootLayout({ children }) {

@@ -1,8 +1,5 @@
 "use client";
 import React, { useState} from 'react';
-import LinkedinIcon from "../../public/linkedin-icon.svg";
-import Link from"next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -30,7 +27,7 @@ const EmailSection = () => {
       
 
        if (response.status === 200) {
-        console.log("Messegae sent.");
+        console.log("Message sent.");
         setEmailSubmitted(true);
       }
        };
@@ -39,7 +36,7 @@ const EmailSection = () => {
       <div className="hidden xl:block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute "></div>
       <div className='z-10 xl:pl-2'><h5 className='text-2xl font-bold text-white mb-2 mt-10 '>Kontakt</h5>
       <h4 className='text-xl font-bold text-white mb-2 mt-4 '>Telefonnummer & WhatsApp: <br/>0125 - 1254512354</h4>
-      <h4 className='text-xl font-bold text-white mb-2 mt-4 '>Mail: jpcaravans@gmx.de</h4>
+      <h4 className='text-xl font-bold text-white mb-2 mt-4 '>Mail: jpcaravans@web.de</h4>
       <p className='text-[#ADB7BE] text-lg mb-4 max-w-md'>
       Bereit, dein nächstes Camper-Projekt zum Erfolg zu führen? {" "} Wir sind dein zuverlässiger Partner für Nachrüstungen.</p>
       <p className='text-[#ADB7BE] text-lg mb-2 max-w-md'>

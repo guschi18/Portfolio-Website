@@ -59,7 +59,7 @@ function Inhalt() {
       38550 Isenb&uuml;ttel<br />
       Glockwiesen 2</p>
       <p>Telefon: 015224396810<br />
-      E-Mail: jpcaravans@gmx.de</p><br />
+      E-Mail: jpcaravans@web.de</p><br />
       <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten<br /> (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</p><br />
       
       <div className="text-decoration-line: underline">Speicherdauer</div> 
