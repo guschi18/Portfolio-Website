@@ -20,7 +20,7 @@ import Link from 'next/link';
           <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-6xl lg:leading-normal font-extrabold'>
             <span className='text-transparent bg-clip-text bg-clig-text 
             bg-gradient-to-r from-red-500 to-orange-500 '>
-              Wir sind dein Profi für Nachrüstungen von {" "}
+              Test {" "}
             </span>
           <br />
       <TypeAnimation className="text-4xl"
