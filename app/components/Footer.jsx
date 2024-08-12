@@ -12,7 +12,7 @@ const Footer = () => {
         <Link href="/impressum">
         <p className='text-slate-600 mt-3 mb-2 mr-2 ' >Impressum</p>
         </Link>
-        <p className='text-slate-600 mt-3 mb-2 mr-2 '>All rights reserved.</p>
+        <p className='text-slate-600 mt-3 mb-2 mr-4 '>All rights reserved.</p>
       </div>
     </footer>
   )

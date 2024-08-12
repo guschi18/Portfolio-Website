@@ -24,7 +24,7 @@ function Inhalt() {
       <div>Unsere E-Mail-Adresse finden Sie im obigen Impressum.</div><br />
 
       <div className="text-xl">Streitbeilegung:<br /><br /></div>
-      <div>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</div>
+      <div className="pb-4">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</div>
       </div>
     </nav>
   )

@@ -1,15 +1,16 @@
-import React from 'react'
-import NavLink from './NavLink'
+import React from 'react';
+import NavLink from './NavLink';
 
-function MenuOverlay(  {links }) {
+function MenuOverlay({ links, onLinkClick }) {
   return (
     <ul className='flex flex-col py-4 items-center'>
       {links.map((link, index) => (
         <li key={index}>
-        <NavLink href={link.path} title={link.title} />
+          <NavLink href={link.path} title={link.title} onClick={onLinkClick} />
         </li>
-      ))}</ul>
-  )
+      ))}
+    </ul>
+  );
 }
 
-export default MenuOverlay
+export default MenuOverlay;

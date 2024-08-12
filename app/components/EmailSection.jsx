@@ -32,9 +32,9 @@ const EmailSection = () => {
       }
        };
   return (
-    <section className='grid md:grid-cols-2 my-4 md:my-12 py-4 gap-4 relative' id="kontakt">
+    <section className='grid md:grid-cols-2 mb-4 mt-6 md:my-12 py-4 gap-4 relative' id="kontakt">
       <div className="hidden xl:block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute "></div>
-      <div className='z-10 xl:pl-2'><h5 className='text-2xl font-bold text-white mb-2 mt-10 '>Kontakt</h5>
+      <div className='z-10 xl:pl-2'><h5 className='text-2xl font-bold text-white mb-2 mt-12 '>Kontakt</h5>
       <h4 className='text-xl font-bold text-white mb-2 mt-4 '>Telefonnummer & WhatsApp: <br/>0125 - 1254512354</h4>
       <h4 className='text-xl font-bold text-white mb-2 mt-4 '>Mail: jpcaravans@web.de</h4>
       <p className='text-[#ADB7BE] text-lg mb-4 max-w-md'>
